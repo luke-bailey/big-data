@@ -164,7 +164,7 @@ val updatePassQuery = """
                                             println("updating username...")
                                             val preparedStatement: PreparedStatement = con.prepareStatement(updateQuery)
                                             preparedStatement.setString(1, newUserName)
-                                            preparedStatement.setString(2, password)
+                                            preparedStatement.setString(2, newPass)
                                             preparedStatement.setString(3, userName)
                                             val res = preparedStatement.execute
                                             if (!res) {
